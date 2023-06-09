@@ -85,6 +85,7 @@
 					<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash.webp" alt="Photo d'un chanteur sur scène lors d'un concert avec un bras levé">
 					<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash.webp" alt="Photo d'une femme riant pendant qu'elle travaille sur son ordinateur portable">
 				</div>
+			</div>
 			<div class="quote">
 				<figure>
 					<blockquote>
@@ -137,62 +138,64 @@
 				<figcaption class="quote__author">- Richard Avedon</figcaption>
 			</figure>
 		</div>
+		<section id="contact">
+			<div class="container">
+				<div class="form-container">
+					<h2>Une question ? Une demande de devis ?</h2> <!--h2 car c'est un sous-titre du site-->
+					<form action="post" method="post">
+						<label for="nom">Nom</label>
+						<input type="text" name="nom" id="nom">
+						<label for="email">Email</label>
+						<input type="email" name="email" id="email">
+						<label for="message">Message</label>
+						<textarea name="message" id="message"></textarea>
+						<input type="submit" value="Envoyer">
+					</form>
+				</div>
+				<div class="picture right">
+					<img src="./assets/images/camera.webp" alt="Image d'un appareil photo vintage">
+				</div>
+			</div>
+		</section>
 	</main>
-    <footer id="contact"> <!--Utilisation de la balise sémantique <footer> pour le contact-->
-        <div class="container">
-            <div class="form-container">
-                <h2>Une question ? Une demande de devis ?</h2> <!--h2 car c'est un sous-titre du site-->
-                <form action="post" method="post">
-                    <label for="nom">Nom</label>
-                    <input type="text" name="nom" id="nom">
-                    <label for="email">Email</label>
-                    <input type="email" name="email" id="email">
-                    <label for="message">Message</label>
-                    <textarea name="message" id="message"></textarea>
-                    <input type="submit" value="Envoyer">
-                </form>
-            </div>
-			<div class="picture right">
-				<img src="./assets/images/camera.webp"alt="Image d'un appareil photo vintage">
-			</div>
-        </div>
-		<div style="display: none;">
-			<div itemscope itemtype=”https://schema.org/Photograph”>
-				<span itemprop=”name”>Nina Carducci, Photographe</span><br>
-				<span itemprop=”telephone”>05 56 67 78 89</span><br>
-				<span itemprop=”email”><br>
-					<a href=”mailto:nina.carducci@gmail.com">nina.carducci@gmail.com</a>
-				</span><br>
-				<span itemprop=”url”>
-					<a href=”https://www.ninacarducci.com”>www.ninacarducci.com</a>
-				</span>
-			</div>
-			<div itemprop=”address” itemscope itemtype=”https://schema.org/PostalAddress”>
-				<span itemprop=”streetAddress”>68 avenue Alsace-Lorraine</span><br>
-				<span itemprop=”postalCode”>33200</span><br>
-				<span itemprop=”addressLocality”>Bordeaux</span><br>
-				<span itemprop=”addressRegion”> Nouvelle Aquitaine</span>
-			</div>
-			<div itemprop="openinghours" itemscope itemtype="https://schema.org/openingHours">
-				<span itemprop="DayOfWeek" itemscope itemtype="https://schema.org/DayOfWeek">
-					<span itemprop="name">Lundi</span>
-				</span>
-				<span itemprop="DayOfWeek" itemscope itemtype="https://schema.org/DayOfWeek">
-					<span itemprop="name">Mardi</span>
-				</span>
-				<span itemprop="DayOfWeek" itemscope itemtype="https://schema.org/DayOfWeek">
-					<span itemprop="name">Mercredi</span>
-				</span>
-				<span itemprop="DayOfWeek" itemscope itemtype="https://schema.org/DayOfWeek">
-					<span itemprop="name">Jeudi</span>
-				</span>
-				<span itemprop="DayOfWeek" itemscope itemtype="https://schema.org/DayOfWeek">
-					<span itemprop="name">Vendredi</span>
-				</span>
-				<span itemprop="openingHours" itemscope itemtype="https://schema.org/OpeningHoursSpecification">
-					<span itemprop="opens">10:00</span> - <span itemprop="closes">19:00</span>
-				</span>
-			</div>
+    <footer>
+		<div itemscope itemtype="https://schema.org/Photograph">
+			<span itemprop="name">Nina Carducci, Photographe</span><br>
+			<span itemprop="telephone">05 56 67 78 89</span><br>
+			<span itemprop="email"><br>
+				<a href="mailto:nina.carducci@gmail.com">nina.carducci@gmail.com</a>
+			</span><br>
+			<span itemprop="url">
+				<a href="https://www.ninacarducci.com">www.ninacarducci.com</a>
+			</span>
+		</div>
+		<div itemscope itemtype="https://schema.org/PostalAddress">
+			<span itemprop="streetAddress">
+				68 avenue Alsace-Lorraine
+			</span><br>
+			<span itemprop="postalCode">33200</span><br>
+			<span itemprop="streetAddress">Bordeaux</span><br>
+			<span itemprop="adressRegion"> Nouvelle Aquitaine</span>
+		</div>
+		<div itemscope itemtype="https://schema.org/OpeningHoursSpecification">
+			<span itemprop="dayOfWeek" itemscope itemtype="https://schema.org/dayOfWeek">
+				<span >Lundi</span>
+			</span>
+			<span itemprop="dayOfWeek" itemscope itemtype="https://schema.org/dayOfWeek">
+				<span >Mardi</span>
+			</span>
+			<span itemprop="dayOfWeek" itemscope itemtype="https://schema.org/dayOfWeek">
+				<span >Mercredi</span>
+			</span>
+			<span itemprop="dayOfWeek" itemscope itemtype="https://schema.org/dayOfWeek">
+				<span >Jeudi</span>
+			</span>
+			<span itemprop="dayOfWeek" itemscope itemtype="https://schema.org/dayOfWeek">
+				<span >Vendredi</span>
+			</span>
+			<span itemprop="openingHours" itemscope itemtype="https://schema.org/OpeningHoursSpecification">
+				<time itemprop="opens">10:00</time> - <time itemprop="closes">19:00</time>
+			</span>
 		</div>
     </footer>
 	<script src="./assets/bootstrap/bootstrap.bundle.js"></script>
