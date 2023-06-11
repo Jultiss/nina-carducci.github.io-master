@@ -398,4 +398,13 @@ input[type="submit"] {
 		width: 80%;
 	}
 }
-
+	footer {
+		background-color: #1C6474;
+		margin-top: 2em;
+		padding-block: 2em;
+		text-align: center;
+		color: white;
+	}
+	footer a {
+		color: white;
+	}
